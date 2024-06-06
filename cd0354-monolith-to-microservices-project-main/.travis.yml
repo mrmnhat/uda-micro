@@ -26,3 +26,4 @@ after_success:
   - docker push truonghet/udagram-api-user
   - docker push truonghet/udagram-frontend
   - docker push truonghet/reverseproxy
+  
