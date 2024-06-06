@@ -8,7 +8,7 @@ const router: Router = Router();
 router.use('/auth', AuthRouter);
 
 router.get('/', async (req: Request, res: Response) => {
-  res.send('ok for testing');
+  res.send('ok');
 });
 
 router.get('/:id', async (req: Request, res: Response) => {
