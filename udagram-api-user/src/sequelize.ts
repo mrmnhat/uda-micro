@@ -6,7 +6,7 @@ export const sequelize = new Sequelize({
   'username': config.username || "postgres",
   'password': config.password|| "postgres",
   'database': config.database|| "postgres",
-  'host': config.host|| "postgresql.ce8pfkihmjtf.us-east-1.rds.amazonaws.com",
+  'host': config.host|| "postgres.ce8pfkihmjtf.us-east-1.rds.amazonaws.com",
 
   'dialect': config.dialect,
   'storage': ':memory:',
