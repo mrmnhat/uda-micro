@@ -5,7 +5,7 @@ metadata:
     service: backend-user
   name: backend-user
 spec:
-  replicas: 2
+  replicas: 20
   selector:
     matchLabels:
       service: backend-user
@@ -15,9 +15,14 @@ spec:
         service: backend-user
     spec:
       containers:
-        - image: mrmnhat/udagram-api-user:v2
+        - image: mrmnhat/udagram-api-user:v4
           name: backend-user
           imagePullPolicy: Always
+          resources:
+            requests:
+              cpu: "250m"
+            limits:
+              cpu: "500m"
           env:
             - name: URL
               valueFrom:
